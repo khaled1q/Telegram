@@ -45,4 +45,4 @@ class Config(object):
     BOT_API_FILE_URL = getenv("BOT_API_FILE_URL", "https://api.telegram.org/file/bot")
     SUDO_USERS = list(map(int, getenv("SUDO_USERS", "1669178360").split()))
     ZAID_USER = list(map(int, getenv("DEV_USERS", "1669178360").split()))
-    NO_LOAD = list(map(int, getenv("NO_LOAD", "sed").split()))
+    NO_LOAD = getenv("NO_LOAD")
